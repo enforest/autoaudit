@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         mvwChina-AutoAudit
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.11
 // @description  try to take over the world!
 // @author       You
 // @match        http://ekmz.mvwchina.com/journal/audit
@@ -15,5 +15,5 @@
     var i;
     for(i=1;i<document.getElementsByClassName("layui-btn layui-btn-mini layui-btn-radius").length;i+=3) {
         document.getElementsByClassName("layui-btn layui-btn-mini layui-btn-radius")[i].click();}
-    }, 5000)
+    }, 20000)
 })();
