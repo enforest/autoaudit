@@ -11,12 +11,21 @@
 // @require      https://z.chaoxing.com/js/jquery-3.5.0.min.js
 // ==/UserScript==
 
-waitForKeyElements (".layui-btn-primary",check);
+// waitForKeyElements (".layui-btn-primary",check);
 
-function check() {
+// function check() {
+//     'use strict';
+//     var boxes = document.getElementsByClassName("layui-unselect layui-form-checkbox")
+//     boxes[boxes.length-1].click();
+//     document.getElementById("approve-batch-btn").click();
+//     setTimeout(function() {},10000);
+// }
+
+(function() {
     'use strict';
-    var boxes = document.getElementsByClassName("layui-unselect layui-form-checkbox")
-    boxes[boxes.length-1].click();
-    document.getElementById("approve-batch-btn").click();
-    setTimeout(function() {},10000);
-}
+    setTimeout(function() {
+    var i;
+    for(i=1;i<document.getElementsByClassName("layui-btn layui-btn-mini layui-btn-radius").length;i+=3) {
+        document.getElementsByClassName("layui-btn layui-btn-mini layui-btn-radius")[i].click();}
+    }, 10000)
+})();
