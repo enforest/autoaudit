@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         New Userscript
 // @namespace    http://tampermonkey.net/
-// @version      0.12
+// @version      0.13
 // @description  try to take over the world!
 // @author       You
 // @match        http://ekmz.mvwchina.com/journal/audit
